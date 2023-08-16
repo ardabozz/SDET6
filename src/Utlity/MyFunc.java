@@ -1,8 +1,8 @@
-package Utility;
+package Utlity;
 
 public class MyFunc {
 
-    public static void Wait(int sn){
+    public static void Bekle(int sn){
         try {
             Thread.sleep(sn*1000);
         } catch (InterruptedException e){

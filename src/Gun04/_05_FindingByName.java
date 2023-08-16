@@ -1,7 +1,6 @@
 package Gun04;
 
-import Utility.MyFunc;
-import org.checkerframework.checker.units.qual.C;
+import Utlity.MyFunc;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,7 +26,7 @@ public class _05_FindingByName {
         btnSubmit.click();
 
 
-        MyFunc.Wait(5);
+        MyFunc.Bekle(5);
         driver.quit();
 
     }

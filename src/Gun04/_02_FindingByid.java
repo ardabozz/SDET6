@@ -1,6 +1,6 @@
 package Gun04;
 
-import Utility.MyFunc;
+import Utlity.MyFunc;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,7 +23,7 @@ public class _02_FindingByid {
         WebElement soyadKutusu= driver.findElement(By.id("last_8"));
         soyadKutusu.sendKeys("Boz");
 
-        MyFunc.Wait(5);
+        MyFunc.Bekle(5);
         driver.quit();
     }
 }

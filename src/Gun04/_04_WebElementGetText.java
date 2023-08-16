@@ -1,6 +1,6 @@
 package Gun04;
 
-import Utility.MyFunc;
+import Utlity.MyFunc;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,7 +17,7 @@ public class _04_WebElementGetText {
         WebElement labelLastName=driver.findElement(By.id("sublabel_8_last"));
         System.out.println("labelLastName.getText() = " + labelLastName.getText());
 
-        MyFunc.Wait(5);
+        MyFunc.Bekle(5);
         driver.quit();
     }
 }
