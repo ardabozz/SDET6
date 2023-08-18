@@ -27,5 +27,6 @@ public class _03_Navigating extends BaseDriver {
         System.out.println(driver.getTitle());
 
         BekleVeKapat();
+
     }
 }
