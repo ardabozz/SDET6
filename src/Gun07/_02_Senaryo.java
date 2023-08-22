@@ -49,6 +49,7 @@ public class _02_Senaryo extends BaseDriver {
         product1.click();
         MyFunc.Bekle(2);
 
+
         WebElement addToCart=driver.findElement(By.xpath("//*[@id='add-to-cart-sauce-labs-backpack']"));
         addToCart.click();
         MyFunc.Bekle(2);
@@ -105,9 +106,6 @@ public class _02_Senaryo extends BaseDriver {
         System.out.println("itemtotal = " + itemtotal);
 
         Assert.assertTrue("Değerler eşit değil", toplam==itemtotal );
-
-
-
 
         BekleVeKapat();
     }

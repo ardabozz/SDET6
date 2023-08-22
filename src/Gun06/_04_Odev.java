@@ -3,6 +3,8 @@ package Gun06;
 import Utlity.BaseDriver;
 import Utlity.MyFunc;
 import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import java.sql.Driver;
 
@@ -18,13 +20,41 @@ import java.sql.Driver;
 public class _04_Odev extends BaseDriver {
 
     @Test
-   public void FormTest(){
-       driver.get("https://formsmarts.com/form/yu?mode=h5");
+    public void FormTest() {
+        driver.get("https://formsmarts.com/form/yu?mode=h5");
+
         MyFunc.Bekle(2);
+        WebElement bussines = driver.findElement(By.cssSelector("[type='radio'][value='Business']"));
+        bussines.click();
 
+        MyFunc.Bekle(2);
+        WebElement dropDownDiscover = driver.findElement(By.cssSelector("select[id$='_4588']"));
+        dropDownDiscover.click();
 
+        MyFunc.Bekle(2);
+        WebElement optionOnlineAdvertising = driver.findElement(By.cssSelector("option[value='Online Advertising']"));
+        optionOnlineAdvertising.click();
 
+        MyFunc.Bekle(2);
+        WebElement everyDayRadio = driver.findElement(By.cssSelector("[type='radio'][value='Every day']"));
+        everyDayRadio.click();
 
+        MyFunc.Bekle(2);
+        WebElement goodRadio = driver.findElement(By.cssSelector("[type='radio'][value='Good']"));
+        goodRadio.click();
 
-   }
+        MyFunc.Bekle(2);
+        WebElement dropdownHowLong= driver.findElement(By.cssSelector("select[id$='_4597']"));
+        dropdownHowLong.click();
+
+        MyFunc.Bekle(2);
+        WebElement option3= driver.findElement(By.cssSelector("select[id$='_4597'] > :nth-child(3)"));
+        option3.click();
+
+        MyFunc.Bekle(2);
+        goodRadio.click();
+
+        BekleVeKapat();
+
+    }
 }
